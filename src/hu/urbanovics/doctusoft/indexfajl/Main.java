@@ -30,7 +30,6 @@ public class Main {
         ArrayList<Map.Entry<String, List<Integer>>> entries = new ArrayList<>(indexMap.entrySet());
 
         Collator collator = Collator.getInstance();
-//        entries.sort(Comparator.comparing(Map.Entry::getKey));
         entries.sort((a, b) -> collator.compare(a.getKey(), b.getKey()));
 
         try (BufferedWriter fileWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("szoveg-index.txt"), StandardCharsets.ISO_8859_1))) {
