@@ -1,0 +1,3 @@
+ehes 1,2
+eszik 2
+peti 1,2
